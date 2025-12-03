@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka tid – Klipp & Krull</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Klipp & Krull</a>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="Galleri.html">Galleri</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="Produkt.html">Produkter & Priser</a></li>
+            <li><a href="Recension.html">Recensioner</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-small">
+    <h1>Boka tid</h1>
+    <p>Välj behandling och tid som passar dig.</p>
+</section>
+
+<section class="booking-section">
+    <form class="booking-form">
+        
+        <label for="name">Namn</label>
+        <input type="text" id="name" placeholder="Ange ditt namn" required>
+
+        <label for="email">E-post</label>
+        <input type="email" id="email" placeholder="Ange din e-post" required>
+
+        <label for="phone">Telefonnummer</label>
+        <input type="tel" id="phone" placeholder="07X-XXX XX XX" required>
+
+        <label for="service">Behandling</label>
+        <select id="service" required>
+            <option value="">Välj behandling</option>
+            <option>Klippning – Dam</option>
+            <option>Klippning – Herr</option>
+            <option>Klippning – Barn</option>
+            <option>Färgning / Slingor</option>
+            <option>Permanent</option>
+            <option>Uppsättning</option>
+            <option>Skäggtrimning</option>
+        </select>
+
+        <label for="date">Datum</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Tid</label>
+        <input type="time" id="time" required>
+
+        <label for="message">Meddelande (valfritt)</label>
+        <textarea id="message" placeholder="Extra information…"></textarea>
+
+        <button type="submit" class="btn-book">Skicka bokning</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Klipp & Krull – Mrs. Nilsson</p>
+</footer>
+
+</body>
+</html>
