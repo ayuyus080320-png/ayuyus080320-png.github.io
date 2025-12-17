@@ -78,7 +78,27 @@ section {
     height: 200px;
     object-fit: cover;
 }
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
 
+  .gallery img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery img:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px svart;
+    filter: brightness(1.1);
+  }
 
 /* PRISLISTA */
 .price-list {
@@ -119,25 +139,4 @@ footer {
         gap: 10px;
     }
 
-
-  .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  .gallery img {
-    width: 280px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-    cursor: pointer;
-  }
-
-  .gallery img:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px svart;
-    filter: brightness(1.1);
-  }
+}
